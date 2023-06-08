@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: atlas-demo-fluxcd-repo-auth
-  url: ssh://git@github.com/pavan-baloji/atlas-aks-fluxcd
+  url: https://github.com/pavan-baloji/atlas-aks-fluxcd.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
