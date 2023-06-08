@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./k8s-manifest/infra
+  path: ./k8s-manifest/infrastructure
   prune: true
   sourceRef:
     kind: GitRepository
