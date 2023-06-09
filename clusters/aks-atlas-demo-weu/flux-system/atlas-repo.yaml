@@ -25,3 +25,17 @@ spec:
   sourceRef:
     kind: GitRepository
     name: atlas-app
+
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: atlas-app-qa
+  namespace: flux-system
+spec:
+  interval: 10m0s
+  path: ./k8s-manifest/infrastructure/overlays/qa
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: atlas-app
